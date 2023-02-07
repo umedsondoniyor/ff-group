@@ -26,7 +26,7 @@ export const PaginationComponent: React.FC = () => {
         page={page} 
         onChange={handleChange}
         variant="outlined" shape="rounded" 
-        color = "secondary"
+        color = "primary"
         defaultPage={6}
         />
   );

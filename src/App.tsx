@@ -51,7 +51,12 @@ const App: React.FC = () => {
             </ListItem>
           </React.Fragment>
         ))}
-        <PaginationComponent/>
+
+        <div className="h-auto max-w-lg mx-auto transition-all duration-300 cursor-pointer filter mb-4 ">
+        <div className="h-auto max-w-lg pl-2 text-lg font-bold inline-flex -space-x-px text-yellow-300">
+          <PaginationComponent/>
+        </div>
+        </div>
       </List>
     </div>
   );
