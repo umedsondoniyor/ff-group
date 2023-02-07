@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Data } from './models/models';
 import { createStyles, makeStyles, Theme, List, ListItem, ListItemText } from '@material-ui/core';
+import {PaginationComponent} from './components/Pagination'
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -50,6 +51,7 @@ const App: React.FC = () => {
             </ListItem>
           </React.Fragment>
         ))}
+        <PaginationComponent/>
       </List>
     </div>
   );

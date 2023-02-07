@@ -42,7 +42,7 @@ export interface Item {
   // add any other properties the item object may have
 };
 
-export interface Pagination  {
+export interface IPagination  {
   before: number;
   current: number;
   first: number;
@@ -56,7 +56,7 @@ export interface Pagination  {
 
 export interface Response  {
   data: Data;
-  pagination: Pagination;
+  pagination: IPagination;
 };
 
 
