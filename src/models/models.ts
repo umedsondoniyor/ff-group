@@ -1,3 +1,65 @@
+export interface Result {
+  id: number;
+  champId: number;
+  no: number;
+  alias: string;
+  date: number;
+  results: string[];
+  scout: object;
+  status: number;
+  state: number;
+  isLive: number;
+  isPayable: number;
+  manualOddsTime: any;
+  host: string;
+  champ: string; // <-- Added this property
+  guest: string;
+  sport: string;
+  country: string;
+}
+
+export interface Data {
+  data: Result[];
+  pagination: {
+    before: number;
+    current: number;
+    first: number;
+    last: number;
+    limit: number;
+    next: number;
+    previous: number;
+    total_items: number;
+    total_pages: number;
+  };
+}
+
+export interface Item {
+  id: number;
+  champId: number;
+  no: number;
+  alias: string;
+  date: number;
+  // add any other properties the item object may have
+};
+
+export interface Pagination  {
+  before: number;
+  current: number;
+  first: number;
+  last: number;
+  limit: number;
+  next: number;
+  previous: number;
+  total_items: number;
+  total_pages: number;
+};
+
+export interface Response  {
+  data: Data;
+  pagination: Pagination;
+};
+
+
 export interface IUser {
   login: string;
   id: number;
